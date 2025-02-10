@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a12b1dd1-e310-4d38-b8bc-2c5b4c150bf8)# ใบงานการทดลอง: พื้นฐานการจัดการรูปแบบเว็บไซต์ด้วย CSS
+# ใบงานการทดลอง: พื้นฐานการจัดการรูปแบบเว็บไซต์ด้วย CSS
 [](#การทดลองที่-1-ทำความรู้จักกับ-css)
 ## การทดลองที่ 1: ทำความรู้จักกับ CSS
 
@@ -669,10 +669,10 @@ nav a {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relat
 
-```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
-![image](https://github.com/user-attachments/assets/7b1c4dde-a472-43d5-97df-a00e4294de08)
+![image](https://github.com/user-attachments/assets/0e5e49c2-ad76-41e9-a1c4-10138133195d).
+
 
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
