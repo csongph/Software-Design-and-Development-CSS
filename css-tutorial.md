@@ -232,9 +232,168 @@ div > p {
 
 ### ผลการทดลอง
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+</head>
+<body>
+    <nav id="nav">
+        <img src="./images/logo.jpg" alt="logo" width="50" height="50">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+        <link rel="stylesheet" href="styles.css">
+    </nav>
+    <hr>
+    <section>
+        <h1>Gallery</h1>
+        <figure>
+            <a href="images/gallery/product1.webp">
+                <img src="images/gallery/product1.webp" alt="product1" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>Brand:</strong>
+                    Canon
+                </p>
+                <p>
+                    <strong>Model:</strong>
+                    Canon Eos R1
+                </p>
+                <p>
+                   
+                    <strong>PRICE:</strong>
+                    235,900 THB
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/product2.jpg">
+                <img src="images/gallery/product2.jpg" alt="product2" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>Brand:</strong>
+                    Sony
+                </p>
+                <p>
+                    <strong>Model:</strong>
+                    Sony a7 iv
+                </p>
+                <p>
+                   
+                    <strong>PRICE:</strong>
+                    82,990 THB
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/product3.webp">
+                <img src="images/gallery/product3.webp" alt="product3" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>Brand:</strong>
+                    Nikon
+                </p>
+                <p>
+                    <strong>Model:</strong>
+                    Nikon D850
+                </p>
+                <p>
+                   
+                    <strong>PRICE:</strong>
+                    111,000 THB
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/product4.jpg">
+                <img src="images/gallery/product4.jpg" alt="product4" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>Brand:</strong>
+                    Fujifilm
+                </p>
+                <p>
+                    <strong>Model:</strong>
+                    Fujifilm GFX 100S II
+                </p>
+                <p>
+                   
+                    <strong>PRICE:</strong>
+                    184,990 THB
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+        <hr>
+    </section>
+    
+    <a href="#nav">กลับด้านบน</a>
+</body>
+</html>
 [วางโค้ดที่นี่]
+css
+:root {
+    --color-1: linear-gradient(to right, #a3a6da, #c81e84, #ade727); 
+    --roboto-font: "Roboto", serif;
+    --montserrat-font: "Montserrat", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background: var(--color-1);
+    height: 80px;
+    font-family: var(--montserrat-font);
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+nav .logo {
+    border-radius: 9999px;
+    padding: 15px;
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+nav .button {
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px 20px;
+    padding: 15px;
+    color: white;
+}
+
+nav .button:hover {
+    border-radius: 9999px;
+    padding: 15px;
+    background: white;
+    color: #eb3b6a;
+    cursor: pointer;
+    transition: .3s;
+}
 ```
+
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![image](https://github.com/user-attachments/assets/7ca32e96-f911-4f3c-9b9c-46f8f2f748bc)
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
