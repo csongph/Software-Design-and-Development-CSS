@@ -672,7 +672,9 @@ nav a {
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
-![Camera-Gallery-and-1-more-page-Personal-Microsoft_-Edge-2025-02-10-15-31-20](https://github.com/user-attachments/assets/a38c2c9d-2b0b-4db4-9b46-21cbb36038c3)
+![image](https://github.com/user-attachments/assets/df4a89b5-5aea-42a5-bfd2-6f0d0f60ee2a)
+![Uploading image.png…]()
+
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
