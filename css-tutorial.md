@@ -497,9 +497,182 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #fff;
+        }
+        nav {
+            background: #222;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 10px;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card-content {
+            margin-top: 10px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .card:hover .card-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <img src="images/logo.jpg" alt="logo" width="50" height="50">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    </nav>
+    <hr>
+    <section>
+        <h1>Gallery</h1>
+        <div class="gallery-container">
+            <div class="card">
+                <a href="images/product1.webp">
+                    <img src="images/product1.webp" alt="Canon Eos R1">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Canon</p>
+                    <p><strong>Model:</strong> Canon Eos R1</p>
+                    <p><strong>PRICE:</strong> 235,900 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product2.jpg">
+                    <img src="images/product2.jpg" alt="Sony a7 iv">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Sony</p>
+                    <p><strong>Model:</strong> Sony a7 iv</p>
+                    <p><strong>PRICE:</strong> 82,990 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product3.webp">
+                    <img src="images/product3.webp" alt="Nikon D850">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Nikon</p>
+                    <p><strong>Model:</strong> Nikon D850</p>
+                    <p><strong>PRICE:</strong> 111,000 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product4.jpg">
+                    <img src="images/product4.jpg" alt="Fujifilm GFX 100S II">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Fujifilm</p>
+                    <p><strong>Model:</strong> Fujifilm GFX 100S II</p>
+                    <p><strong>PRICE:</strong> 184,990 THB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <a href="#nav" style="color: #fff; font-weight: bold;">กลับด้านบน</a>
+</body>
+</html>
+```
 [วางโค้ดที่นี่]
+css
+/* สไตล์พื้นฐานของหน้า */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* สไตล์ของเมนูนำทาง */
+nav {
+    background: #222;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ตั้งค่ากล่องแสดงสินค้า */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* สไตล์ของการ์ดสินค้า */
+.card {
+    background: rgba(238, 142, 142, 0.9);
+    color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relat
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![Camera-Gallery-and-1-more-page-Personal-Microsoft_-Edge-2025-02-10-15-31-20](https://github.com/user-attachments/assets/a38c2c9d-2b0b-4db4-9b46-21cbb36038c3)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
