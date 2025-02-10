@@ -1,4 +1,4 @@
-# ใบงานการทดลอง: พื้นฐานการจัดการรูปแบบเว็บไซต์ด้วย CSS
+![image](https://github.com/user-attachments/assets/a12b1dd1-e310-4d38-b8bc-2c5b4c150bf8)# ใบงานการทดลอง: พื้นฐานการจัดการรูปแบบเว็บไซต์ด้วย CSS
 [](#การทดลองที่-1-ทำความรู้จักกับ-css)
 ## การทดลองที่ 1: ทำความรู้จักกับ CSS
 
@@ -672,8 +672,7 @@ nav a {
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
-![image](https://github.com/user-attachments/assets/df4a89b5-5aea-42a5-bfd2-6f0d0f60ee2a)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/7b1c4dde-a472-43d5-97df-a00e4294de08)
 
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
