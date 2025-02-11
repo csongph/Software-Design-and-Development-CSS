@@ -1504,7 +1504,8 @@ footer {
 }
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-![image](https://github.com/user-attachments/assets/50a19139-9aba-4bbc-9d24-6c36bbeb2e56)
+![image](https://github.com/user-attachments/assets/936a39d3-bc29-475e-be47-4afb835bf2e7)
+
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
@@ -1647,11 +1648,143 @@ footer {
 ### ผลการทดลอง
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <img src="images/logo.jpg" alt="logo" width="50" height="50">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    </nav>
+    <hr>
+    <section>
+        <h1>Gallery</h1>
+        <div class="gallery-container">
+            <div class="card">
+                <a href="images/product1.webp">
+                    <img src="images/product1.webp" alt="Canon Eos R1">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Canon</p>
+                    <p><strong>Model:</strong> Canon Eos R1</p>
+                    <p><strong>PRICE:</strong> 235,900 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product2.jpg">
+                    <img src="images/product2.jpg" alt="Sony a7 iv">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Sony</p>
+                    <p><strong>Model:</strong> Sony a7 iv</p>
+                    <p><strong>PRICE:</strong> 82,990 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product3.webp">
+                    <img src="images/product3.webp" alt="Nikon D850">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Nikon</p>
+                    <p><strong>Model:</strong> Nikon D850</p>
+                    <p><strong>PRICE:</strong> 111,000 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product4.jpg">
+                    <img src="images/product4.jpg" alt="Fujifilm GFX 100S II">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Fujifilm</p>
+                    <p><strong>Model:</strong> Fujifilm GFX 100S II</p>
+                    <p><strong>PRICE:</strong> 184,990 THB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <a href="#nav" style="color: #fff; font-weight: bold;">กลับด้านบน</a>
+</body>
+</html>
 ```
+
 ```css
 [วางโค้ด CSS ที่นี่]
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav img {
+    vertical-align: middle;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+    width: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content p {
+    margin: 0.5rem 0;
+}
+
+a[href="#nav"] {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/c4aaf1a1-e506-4f15-af3b-dac34310756f)
 
 
 ### ตัวอย่างการใช้งาน: การสร้างเลย์เอาต์ Modern Dashboard
@@ -1800,9 +1933,140 @@ footer {
 ### ผลการทดลอง
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <img src="images/logo.jpg" alt="logo" width="50" height="50">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    </nav>
+    <hr>
+    <section>
+        <h1>Gallery</h1>
+        <div class="gallery-container">
+            <div class="card">
+                <a href="images/product1.webp">
+                    <img src="images/product1.webp" alt="Canon Eos R1">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Canon</p>
+                    <p><strong>Model:</strong> Canon Eos R1</p>
+                    <p><strong>PRICE:</strong> 235,900 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product2.jpg">
+                    <img src="images/product2.jpg" alt="Sony a7 iv">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Sony</p>
+                    <p><strong>Model:</strong> Sony a7 iv</p>
+                    <p><strong>PRICE:</strong> 82,990 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product3.webp">
+                    <img src="images/product3.webp" alt="Nikon D850">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Nikon</p>
+                    <p><strong>Model:</strong> Nikon D850</p>
+                    <p><strong>PRICE:</strong> 111,000 THB</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="images/product4.jpg">
+                    <img src="images/product4.jpg" alt="Fujifilm GFX 100S II">
+                </a>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> Fujifilm</p>
+                    <p><strong>Model:</strong> Fujifilm GFX 100S II</p>
+                    <p><strong>PRICE:</strong> 184,990 THB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <a href="#nav" style="color: #fff; font-weight: bold;">กลับด้านบน</a>
+</body>
+</html>
+
 ```
-```css
+css
 [วางโค้ด CSS ที่นี่]
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #e0adad;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav img {
+    vertical-align: middle;
+}
+
+nav a {
+    color: #1467c5;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #db8383;
+    border-radius: 5px;
+    margin: 1rem;
+    width: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content p {
+    margin: 0.5rem 0;
+}
+
+a[href="#nav"] {
+    display: inline-block;
+    margin-top: 2rem;
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+```
+![image](https://github.com/user-attachments/assets/eed83160-2581-4f97-8e48-25e6c7cd356f)
